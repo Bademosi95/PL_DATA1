@@ -481,7 +481,7 @@ def main():
     st.markdown(
         """
         <div style='text-align: center; color: #666; font-size: 0.8rem;'>
-            ⚽ Football Match Predictor | Built with Streamlit & Poisson Distribution<br>
+            ⚽ KB Football Match Predictor<br>
             Predictions are for entertainment purposes only. Past performance does not guarantee future results.
         </div>
         """,
