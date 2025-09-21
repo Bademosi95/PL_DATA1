@@ -58,7 +58,7 @@ class FootballPredictor:
         """Load data from URL with caching"""
         try:
             if url:
-                df = pd.read_html(url, attrs={"id":"results2024-202591_home_away"})[0]
+                df = pd.read_html(url, attrs={"id":"results2025-202691_home_away_sh"})[0]
             else:
                 # Fallback sample data if URL fails
                 sample_teams = ['Arsenal', 'Chelsea', 'Liverpool', 'Manchester City', 'Manchester United', 
@@ -291,7 +291,7 @@ def main():
     
     # Load data
     with st.spinner("Loading team data..."):
-        url = 'https://fbref.com/en/comps/9/2024-2025/2024-2025-Premier-League-Stats'
+        url = 'https://fbref.com/en/comps/9/Premier-League-Stats'
         df, league_avg_home_goals, league_avg_away_goals, success = predictor.load_data(url)
     
     if not success or df is None:
