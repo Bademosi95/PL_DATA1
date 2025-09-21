@@ -30,7 +30,7 @@ class FootballPredictor:
         """Load data from URL or CSV with error handling"""
         try:
             if url:
-                self.df = pd.read_html(url, attrs={"id":"results2024-202591_home_away"})[0]
+                self.df = pd.read_html(url, attrs={"id":"results2025-202691_home_away_sh"})[0]
             elif csv_path:
                 self.df = pd.read_csv(csv_path)
             else:
@@ -296,7 +296,7 @@ def main():
     predictor = FootballPredictor()
     
     # Load data
-    url = 'https://fbref.com/en/comps/9/2024-2025/2024-2025-Premier-League-Stats'
+    url = 'https://fbref.com/en/comps/9/Premier-League-Stats'
     if predictor.load_data(url=url):
         
         # Example predictions
