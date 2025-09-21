@@ -30,7 +30,7 @@ class FootballPredictor:
         """Load data from URL or CSV with error handling"""
         try:
             if url:
-                self.df = pd.read_html(url, attrs={"id":"results2025-202691_home_away_sh"})[0]
+                self.df = pd.read_html(url, attrs={"id":"div_results2025-202691_home_away"})[0]
             elif csv_path:
                 self.df = pd.read_csv(csv_path)
             else:
