@@ -58,7 +58,7 @@ class FootballPredictor:
         """Load data from URL with caching"""
         try:
             if url:
-                df = pd.read_html(url, attrs={"id":"div_results2025-202691_home_away"})[0]
+                df = pd.read_html(url, attrs={"id":"results2025-202691_home_away"})[0]
             else:
                 # Fallback sample data if URL fails
                 sample_teams = ['Arsenal', 'Chelsea', 'Liverpool', 'Manchester City', 'Manchester United', 
